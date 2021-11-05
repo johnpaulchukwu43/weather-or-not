@@ -1,0 +1,2 @@
+class UserWeatherSubscription < ApplicationRecord
+end
