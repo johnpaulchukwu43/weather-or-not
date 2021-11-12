@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '2.7.2'
+ruby '3.0.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
 gem 'rails', '~> 6.0.4', '>= 6.0.4.1'
@@ -30,6 +30,9 @@ gem 'graphql'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
+
+  #for testing
+  gem 'rspec-rails'
 end
 
 group :development do
@@ -43,11 +46,13 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 
-#Handle specific business logic
 
 gem 'clockwork'
+
 gem 'httparty'
+
 gem 'interactor-rails'
+
 gem 'sidekiq'
 
 gem 'dotenv-rails'
